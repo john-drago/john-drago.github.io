@@ -1,0 +1,345 @@
+/* IMPORTED FONTS */
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* THIS IS THE HEADER */
+
+
+header {
+
+    position: fixed;
+    width: 90%;
+    z-index: 10;
+    right: 0;
+    left: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(0,0,0,80%);
+    border-radius: 6px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.nav_btn {
+
+    background-color: rgba(0,0,0,0%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 4px 5px;
+
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Roboto", "Arial","courier new", 'courier', 'Arial', 'Times';
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.nav_btn:hover {
+    background-color: gray;
+}
+
+.nav_btn:active {
+    background-color: red;
+}
+
+.nav_img {
+    float: left;
+    width: 30px;
+    text-align: center;
+    margin: 9px 10px;
+    border-radius: 3px;
+    opacity: 0.7;
+}
+
+.nav_img:active {
+    border: 1px solid red;
+    opacity: 50%;
+}
+
+
+/* THIS IS THE TOP BANNER */
+
+
+.topbanner {
+    display: block;    
+    width: 90%;
+    padding: 5px 7.5px;
+    margin: 0 auto;
+
+    background-color: black;
+    border-style: none;
+    position: relative;
+    top: 0px;
+    border-radius: 3px;
+}
+
+
+/* THIS IS THE INITIAL BAR and USER NAME */
+
+
+.top_bar {
+    text-align: left;
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Arial Black', 'Gadget', 'sans-serif';
+}
+
+.top_bar .name {
+    margin-left: 7px;
+}
+
+.top_bar .intro_bar {
+    position: relative;
+    top: -10px;
+    color: gray;
+    background-color: gray;
+    border: 0.5px solid gray;
+}
+
+
+/* THIS IS THE OPENING IMAGE AND PARAGRAPH */
+
+
+
+.page_intro {
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+    font-size: 13.5px;
+}
+
+.headshot {
+    width: 275px;
+    height: auto;
+    float: left;
+    margin-right: 50px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.opening {
+    display: inline;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.opening_par {
+    word-spacing: 0.35em;
+}
+
+.list_email {
+    font-size: 12px;
+}
+
+.email_text {
+    font-family: "courier new", "courier", "monospace";
+    font-size: 12.5px;
+}
+
+.inline_link{
+    text-decoration-line: none;
+    color: rgba(0,0,153,100%);
+}
+
+.inline_link:hover{
+    color: purple;
+}
+
+.inline_link:activate {
+    color: red;
+}
+
+
+/* THIS IS THE ADDITIONAL PERSONAL INFORMATION */
+
+
+.addl_info {
+    width: 750px;
+    margin: 0 auto;
+    font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+    font-size: 13.5px;
+}
+
+.addl_info_img {
+    image-orientation: from-image;
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-left: 50px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.addl_info_text {
+    display: inline;
+    text-align: justify;
+    vertical-align: middle;
+    word-spacing: 0.35em;
+}
+
+.past_projects {
+    margin: auto;
+    width: 900px;
+    text-align: left;
+    font-family: 'Arial Black', 'Gadget', 'sans-serif';
+}
+
+
+/* THIS IS THE MAIN BODY OF THE PROJECTS SECTION */
+
+
+main hr {
+    position: relative;
+    top: -10px;
+    color: gray;
+    background-color: gray;
+    border: 0.5px solid gray;
+
+}
+
+main {
+    margin: auto;
+    width: 900px;
+}
+
+.group_title {
+    text-align: center;
+    padding: 5px 0px;
+    margin: 0px 270px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.img_reg_img {
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: center;
+}
+
+.proj_text {
+    text-align: justify;
+    margin-right: 50px;
+    font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+    font-size: 13px;
+}
+
+.proj_titles {
+    text-align: center;
+    vertical-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.proj_img {
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.pub_links {
+    text-align: center;
+    margin: auto;
+}
+
+
+.abstract_link{
+    text-decoration-line: none;
+    color: rgba(0,0,153,100%);
+}
+
+.abstract_link:hover{
+    color: purple;
+}
+
+.abstract_link:activate {
+    color: red;
+}
+
+.kinematics_img {
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: center;
+}
+
+.biomech_img {
+    width: 350px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: center;
+}
+
+.cell_sig_img {
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: center;
+}
+
+
+/* THIS IS THE FOOTER */
+
+
+footer {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    /*border: 1px solid black;*/
+    border: none;
+    border-radius: 3px;
+    color: black;
+    background-color: rgba(0,0,0,80%);
+}
+
+.foot_text {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', 'courier new', 'courier', 'Arial', 'Times';
+    letter-spacing: 0.8px;
+    font-size: 14px;
+
+}
+
+.foot_text:hover {
+    color: gray;
+}
+
+
+
