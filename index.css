@@ -319,7 +319,7 @@ footer {
     text-align: center;
     /*border: 1px solid black;*/
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     color: black;
     background-color: rgba(0,0,0,80%);
 }
