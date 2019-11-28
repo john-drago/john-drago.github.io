@@ -330,7 +330,7 @@ footer {
     margin: 5px 15px;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: rgb(150,150,150);
     font-family: 'Roboto', 'courier new', 'courier', 'Arial', 'Times';
     letter-spacing: 0.8px;
     font-size: 14px;
@@ -338,7 +338,7 @@ footer {
 }
 
 .foot_text:hover {
-    color: gray;
+    color: rgb(100,100,100);
 }
 
 
