@@ -344,51 +344,51 @@ footer {
 /* THIS IS THE HOW HIGHLIGHTING TEXT WILL BE DISPLAYED */
 
 .name::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 p::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .ital_par::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .bold_par::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .inline_link::selection {
-    background: black;
+    background: #262626;
     color: cyan;
 }
 
 .list_email::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .email_text::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .abstract_link::selection {
-    background: black;
+    background: #262626;
     color: cyan;
 }
 
 .absent_link::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
 
 .pub_links::selection {
-    background: black;
-    color: #00e600;
+    background: #262626;
+    color: #2eff45;
 }
