@@ -128,14 +128,14 @@ header {
 
 
 .page_intro {
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
     font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
     font-size: 13.5px;
 }
 
 .headshot {
-    width: 275px;
+    width: 350px;
     height: auto;
     float: left;
     margin-right: 50px;
