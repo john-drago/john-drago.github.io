@@ -21,7 +21,7 @@ endobj
 4 0 obj
 <</Type /Font
 /Subtype /Type0
-/BaseFont /QSQMNH+TimesNewRoman
+/BaseFont /LYTFVG+TimesNewRoman
 /Name /F1
 /Encoding /Identity-H
 /DescendantFonts [5 0 R]
@@ -32,7 +32,7 @@ endobj
 5 0 obj
 <</Type /Font
 /Subtype /CIDFontType2
-/BaseFont /QSQMNH+TimesNewRoman
+/BaseFont /LYTFVG+TimesNewRoman
 /CIDSystemInfo 6 0 R
 /FontDescriptor 7 0 R
 /W [0 [777 0 250 250 333 408 500 500 833 777 180 333 333 500 563 250 333 250 277 500
@@ -218,7 +218,7 @@ endobj
 
 7 0 obj
 <</Type /FontDescriptor
-/FontName /QSQMNH+TimesNewRoman
+/FontName /LYTFVG+TimesNewRoman
 /FontBBox [-568 -306 2000 1006]
 /Ascent 891
 /Descent -216
@@ -429,7 +429,7 @@ endobj
 10 0 obj
 <</Type /Font
 /Subtype /Type0
-/BaseFont /QSQMNH+TimesNewRoman,Bold
+/BaseFont /LYTFVG+TimesNewRoman,Bold
 /Name /F2
 /Encoding /Identity-H
 /DescendantFonts [11 0 R]
@@ -440,7 +440,7 @@ endobj
 11 0 obj
 <</Type /Font
 /Subtype /CIDFontType2
-/BaseFont /QSQMNH+TimesNewRoman,Bold
+/BaseFont /LYTFVG+TimesNewRoman,Bold
 /CIDSystemInfo 12 0 R
 /FontDescriptor 13 0 R
 /W [0 [777 0 250 250 333 555 500 500 1000 833 277 333 333 500 569 250 333 250 277 500
@@ -626,7 +626,7 @@ endobj
 
 13 0 obj
 <</Type /FontDescriptor
-/FontName /QSQMNH+TimesNewRoman,Bold
+/FontName /LYTFVG+TimesNewRoman,Bold
 /FontBBox [-558 -306 2000 1025]
 /Ascent 891
 /Descent -216
@@ -847,7 +847,7 @@ trailer
 <</Size 18
 /Root 1 0 R
 /Info 3 0 R
-/ID [<F485548F02AF1B1C57A28F4600C677A8> <F485548F02AF1B1C57A28F4600C677A8>]
+/ID [<688898345955584E478EBA4482D2F4AD> <688898345955584E478EBA4482D2F4AD>]
 >>
 startxref
 99152
