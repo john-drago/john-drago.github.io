@@ -8,5 +8,5 @@ I periodically update the code to add new gadgets to the website or to emulate s
 
 Thank you for visiting my website!
 
-~John
+JD
 
