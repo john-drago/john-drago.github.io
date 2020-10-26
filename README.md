@@ -1,4 +1,4 @@
-##Welcome
+## Welcome
 
 Welcome to the repository containing the code for my personal website [john-drago.github.io](https://john-drago.github.io). I wrote the vast majority of this code in November of 2019 when creating an online portfolio for graduate school applications. 
 
