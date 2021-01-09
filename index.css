@@ -22,15 +22,20 @@
 
 /* THIS IS THE HEADER */
 
-
 header {
-
-    position: fixed;
-    width: 90%;
-    z-index: 10;
+	z-index: 10;
+	position:fixed;
+	width: 90%;
+	margin-left: auto;
+    margin-right: auto;
     right: 0;
     left: 0;
+}
 
+.header_transparent {
+    width: 100%;
+    right: 0;
+    left: 0;
     margin-left: auto;
     margin-right: auto;
 
@@ -82,8 +87,30 @@ header {
     opacity: 50%;
 }
 
+/* Progress Container */
+.progress-container {
+	position: relative;
+	right: 0;
+    left: 0;
+    top: -3px;
+	width: 99.25%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 3px;
+	background: rgba(0, 0, 0, 0%);
+	border-radius: 6px;
 
-/* THIS IS THE TOP BANNER */
+}
+
+.progress-bar {
+	height: 3px;
+	background: #2eff45;
+	width: 0%;
+	border-radius: 6px;
+}
+
+
+/* THIS IS THE TOP BANNER -- Skeleton Picture */
 
 .topbanner_wrap {
     width: 100%;
