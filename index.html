@@ -15,14 +15,35 @@
 
         <header>
 
+            <div class="header_transparent">
+
                 <a href='./docs/radon_transform.m' target="_blank"><img class='nav_img' src='./images/header_img.png'></a>
             
                 <a class='nav_btn' href='#about'>About</a>
                 <a class='nav_btn' href='#projects'>Projects</a>
                 <a class='nav_btn' href='./docs/johndrago_CV_public.pdf' target="_blank">CV</a>
 
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="scrollBar">
+                        <script>
+                            window.onscroll = function() {myFunction()};
+
+                            function myFunction() {
+                                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                                var scrolled = (winScroll / height) * 100;
+                                document.getElementById("scrollBar").style.width = scrolled + "%";
+                                }
+                        </script>
+                </div>
+            </div>
+                
+
 
         </header>
+
 
         <div class="topbanner_wrap">
         	<img class='topbanner' src='images/topbanner.jpg' id='about'>
@@ -135,7 +156,8 @@
                             <a class='abstract_link' href='https://www.ors.org/Transactions/65/1844.pdf' target="_blank">[ Abstract 7 ]</a> 
                             <a class='abstract_link' href='https://www.emma.events/site/programme/?1=1&sessiondetail=2562723&abstractdetail=72468&a=efort2019&trackid=0&i=' target="_blank">[ Abstract 8 ]</a> 
                             <br> 
-                            <span class='absent_link'>[ Manuscripts Under Review ]</span>
+                            <a class='abstract_link' href='https://pubmed.ncbi.nlm.nih.gov/33111271/' target="_blank">[ Manuscript 1 ]</a>
+                            <a class='abstract_link' href='https://pubmed.ncbi.nlm.nih.gov/33388940/' target="_blank">[ Manuscript 2 ]</a>
                         </div>
                     </div>
                 </div>
