@@ -307,6 +307,14 @@ main {
     font-size: 16px;
 }
 
+.mpi_img {
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    vertical-align: center;
+}
+
 .img_reg_img {
     width: 300px;
     float: left;
