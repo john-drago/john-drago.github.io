@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+<html lang="en"> <!-- set language to English -->
+
+<head> <!-- metadata + page setup -->
+  <meta charset="utf-8"> <!-- character encoding -->
+  <title>John Drago</title> <!-- tab title -->
+  <link rel="stylesheet" href="index.css"> <!-- stylesheet -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> <!-- favicon -->
+  <meta name="description"
+    content="Welcome to John Drago’s homepage: research projects and interests across medicine, engineering, and imaging.">
+  <meta name="author" content="John Drago"> <!-- original author tag -->
+</head> <!-- end head -->
+
+<body> <!-- main page content -->
+
+  <!-- ===== Header ===== -->
+  <header> <!-- translucent header -->
+    <div class="header_transparent"> <!-- bar with nav -->
+      <a href="./assets/docs/radonImage.m" target="_blank" rel="noopener">
+        <img class="nav_img" src="./assets/images/header-img.png" alt="Site logo">
+      </a> <!-- logo link -->
+      <a class="nav_btn" href="#about">About</a> <!-- about link -->
+      <a class="nav_btn" href="#projects">Projects</a> <!-- projects link -->
+      <a class="nav_btn" href="./assets/docs/johndrago-CV-public.pdf" target="_blank" rel="noopener">CV</a> <!-- CV link -->
+    </div>
+    <div class="progress-container"> <!-- scroll progress bar -->
+      <div class="progress-bar" id="scrollBar"></div> <!-- bar filled via JS -->
+    </div>
+  </header>
+
+  <!-- ===== Top banner ===== -->
+  <div class="topbanner_wrap" id="about"> <!-- banner + anchor -->
+    <img class="topbanner" src="./assets/images/top-banner.jpg" alt="Stage lighting banner photo"> <!-- banner image -->
+    <p class="topbanner_overlay"><span class="topbanner_overlay_text">Image taken in Spring 2016 for 21M.734: Lighting
+        Design</span></p> <!-- hover caption -->
+  </div>
+
+  <div class="spacer s24"></div> <!-- spacing -->
+
+  <!-- ===== Name bar ===== -->
+  <div class="top_bar"> <!-- name + line -->
+    <h3 class="name">John M. Drago</h3> <!-- my name -->
+    <hr class="intro_bar"> <!-- thin gray line -->
+  </div>
+
+  <!-- ===== Intro section ===== -->
+  <section class="page_intro"> <!-- headshot + text -->
+    <img class="headshot" src="./assets/images/headshot.jpg" alt="Portrait of John M. Drago"> <!-- photo -->
+    <div class="opening"> <!-- text column -->
+      <p class="opening_par">I am a student in the <a class="inline_link" href="https://www.hms.harvard.edu/md_phd/" target="_blank" rel="noopener noreferrer">Harvard/MIT MD-PhD program</a>. I recently completed my PhD in the <a class="inline_link" href="https://www.eecs.mit.edu/" target="_blank" rel="noopener noreferrer">Department of Electrical Engineering and Computer Science</a> at <a class="inline_link" href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">MIT</a>, working with <a class="inline_link" href="https://www.martinos.org/investigator/larry-wald/" target="_blank" rel="noopener noreferrer">Prof. Larry Wald</a> at the <a class="inline_link" href="https://www.martinos.org/" target="_blank" rel="noopener noreferrer">MGH Martinos Center</a>. My <a class="inline_link" href="https://www.dropbox.com/scl/fi/tsfg4bezupuj0qdu2c5zo/drago-jdrago-phd-eecs-2025-thesis.pdf?rlkey=c0abi0d582she8jzzkrbe3b8r&e=1&dl=0" target="_blank" rel="noopener noreferrer">doctoral research</a> focused on computational methods for medical imaging, particularly GPU-accelerated MRI excitation pulse design and a novel multiphoton-based excitation technique for achieving homogeneous excitations in high-field MRI. More broadly, I am interested in developing numerical methods and computational techniques for clinical medicine.</p>
+      <p class="list_email"><u><b class="bold_par">Email:</b></u><span class="email_text">&emsp;firstname [underscore] lastname [at] hms [dot] harvard [dot] edu</span></p> <!-- email obfuscated -->
+    </div>
+  </section>
+
+  <div class="spacer s32"></div> <!-- spacing -->
+
+  <!-- ===== Personal blurb ===== -->
+  <section class="addl_info"> <!-- text + image -->
+    <div class="addl_info_text">
+      <p class="opening_par">Previously, I contributed to the development of functional magnetic particle imaging scanners and characterized detection sensitivity to cerebral blood volume changes <i class="ital_par">in vivo</i>. I have also studied 2D–3D deep learning approaches for image registration and investigated the <i class="ital_par">in vivo</i> kinematics of knee replacement designs using dual-plane fluoroscopy in the <a class="inline_link" href="https://www.massgeneral.org/orthopaedics/research/bioengineering-laboratory" target="_blank" rel="noopener noreferrer">MGH Bioengineering Laboratory</a>.</p>
+      <p>Outside of medicine and engineering, I'm an avid sports fan and a lifelong supporter of the <a class="inline_link" href="https://www.giants.com/" target="_blank" rel="noopener noreferrer">New York Football Giants</a>. In my free time, I enjoy reading nonfiction, playing pick-up basketball, learning guitar, and seeing live music.</p>
+      <p>Thank you for visiting my webpage! Go Giants!</p>
+    </div>
+    <img class="addl_info_img" src="./assets/images/giants.jpg" alt="New York Giants logo"> <!-- giants image -->
+  </section>
+
+  <div class="spacer s56"></div> <!-- spacing -->
+
+  <!-- ===== Projects ===== -->
+  <main> <!-- project section -->
+    <div class="research_projects"> <!-- header -->
+      <h3 class="name" id="projects">Research Projects:</h3> <!-- projects title -->
+      <hr> <!-- gray line -->
+    </div>
+
+    <div class="spacer s24"></div> <!-- spacing -->
+
+    <!-- ===== Project groups ===== -->
+    <section class="mr_pigs"> <!-- MR group -->
+      <h4 class="group_title">Magnetic Resonance Physics & Instrumentation Group</h4>
+      <div class="spacer s32"></div>
+      <div id="group-mr_pigs"></div> <!-- JS injects here -->
+    </section>
+
+    <div class="spacer s56"></div> <!-- spacing -->
+
+    <section class="bioengineering_lab"> <!-- Bioengineering group -->
+      <h4 class="group_title">Bioengineering Laboratory</h4>
+      <div class="spacer s32"></div>
+      <div id="group-bioengineering_lab"></div> <!-- JS injects here -->
+    </section>
+
+    <div class="spacer s56"></div> <!-- spacing -->
+
+    <section class="continuum"> <!-- Continuum group -->
+      <h4 class="group_title">Continuum Biomechanics Lab</h4>
+      <div class="spacer s32"></div>
+      <div id="group-continuum"></div> <!-- JS injects here -->
+    </section>
+  </main>
+
+  <div class="spacer s56"></div> <!-- spacing -->
+
+  <!-- ===== Footer ===== -->
+  <footer> <!-- footer bar -->
+    <span class="foot_text">John M. Drago</span>
+    <span class="foot_text">&copy;</span>
+    <span class="foot_text">2019-<span id="currentYear"></span></span> <!-- current year auto-added -->
+  </footer>
+
+  <script src="index.js"></script> <!-- JS file -->
+</body>
+
+</html>

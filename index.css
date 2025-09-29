@@ -1,0 +1,366 @@
+/* === Fonts === */
+@font-face {
+  /* Roboto regular */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  /* Roboto bold */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* === Utility spacing helpers === */
+.spacer {
+  display: block;
+  width: 100%;
+}
+
+/* simple vertical spacer */
+.s24 { height: 24px; }
+.s32 { height: 32px; }
+.s56 { height: 56px; }
+
+/* === Header (kept as-is so overlap works) === */
+header {
+  z-index: 10;
+  position: fixed;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+}
+
+.header_transparent {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* fixed: percent → decimal */
+  border-radius: 6px;
+  text-align: right;
+}
+
+.nav_btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 4px 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", "Arial", "courier new", "courier", "Times";
+  letter-spacing: 1.5px;
+  font-weight: 100;
+}
+
+.nav_btn:hover { background-color: gray; }
+.nav_btn:active { background-color: red; }
+
+.nav_img {
+  float: left; /* keep logo on the left */
+  width: 30px;
+  margin: 9px 10px;
+  border-radius: 3px;
+  opacity: 0.7;
+}
+
+.nav_img:active {
+  border: 1px solid red;
+  opacity: 0.5;
+}
+
+/* === Scroll progress strip === */
+.progress-container {
+  position: relative;
+  top: -3px;
+  width: 99.25%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  background: transparent;
+  border-radius: 6px;
+}
+
+.progress-bar {
+  height: 3px;
+  background: #2eff45;
+  width: 0%;
+  border-radius: 6px;
+}
+
+/* === Top banner === */
+.topbanner_wrap {
+  width: 100%;
+  position: relative;
+}
+
+.topbanner {
+  display: block;
+  width: 90%;
+  padding: 5px 7.5px;
+  margin: 0 auto;
+  background-color: black;
+  border: none;
+  position: relative;
+  border-radius: 3px;
+}
+
+.topbanner_overlay {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 90%;
+  border-radius: 3px;
+  padding: 5px 7.5px;
+  margin: 0 auto;
+  background: transparent;
+  visibility: hidden;
+}
+
+.topbanner_overlay_text {
+  position: absolute;
+  bottom: 0;
+  margin-left: -2px;
+  margin-bottom: 5px;
+  color: rgb(60, 60, 60);
+  text-align: left;
+  font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+  font-size: 11px;
+}
+
+.topbanner_wrap:hover .topbanner_overlay { visibility: visible; }
+
+/* === Name bar === */
+.top_bar {
+  text-align: left;
+  width: 900px;
+  margin: 0 auto;
+  font-family: 'Arial Black', 'Gadget', 'sans-serif';
+}
+
+.top_bar .name { margin-left: 7px; }
+
+.top_bar .intro_bar {
+  position: relative;
+  top: -10px;
+  color: gray;
+  background-color: gray;
+  border: 0.5px solid gray;
+}
+
+/* === Intro section (flex centered) === */
+.page_intro {
+  width: 850px;
+  margin: 0 auto;
+  font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+  font-size: 13.5px;
+  display: flex;      /* image + text side by side */
+  align-items: center;/* vertical centering */
+}
+
+.headshot {
+  width: 250px;
+  margin-right: 50px;
+  border-radius: 3px;
+  flex-shrink: 0; /* image fixed size */
+}
+
+.opening { flex: 1; text-align: justify; }
+.opening_par { word-spacing: 0.35em; }
+
+.list_email { font-size: 12px; }
+
+.email_text {
+  font-family: "courier new", "courier", "monospace"; /* monospace preserved */
+  font-size: 12.5px;
+}
+
+/* === Inline links (unchanged, pseudo-class fixed) === */
+.inline_link { text-decoration: none; color: rgba(0, 0, 153, 1); }
+.inline_link:hover { color: purple; }
+.inline_link:active { color: red; } /* fixed: :activate → :active */
+
+/* === Personal blurb (flex centered) === */
+.addl_info {
+  width: 800px;
+  margin: 0 auto;
+  font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+}
+
+.addl_info_img {
+  width: 200px;
+  margin-left: 50px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  order: 2; /* image on right */
+}
+
+.addl_info_text {
+  flex: 1;
+  text-align: justify;
+  word-spacing: 0.35em;
+  order: 1; /* text on left */
+}
+
+/* === Projects section heading === */
+.research_projects {
+  margin: auto;
+  width: 900px;
+  text-align: left;
+  font-family: 'Arial Black', 'Gadget', 'sans-serif';
+}
+
+main hr {
+  position: relative;
+  top: -10px;
+  color: gray;
+  background-color: gray;
+  border: 0.5px solid gray;
+}
+
+main { margin: auto; width: 900px; }
+
+/* Group titles (kept) */
+.group_title {
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 270px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* === Project rows: flex centered === */
+.ritz,
+.mpptx_method,
+.mpptx_coil,
+.mpi,
+.img_reg,
+.kinematics,
+.strain_device,
+.cell_sig {
+  display: flex;
+  align-items: center;
+}
+
+.ritz_img        { width: 275px; margin: 0 50px; }
+.mpptx_method_img{ width: 275px; margin: 0 50px; }
+.mpptx_coil_img  { width: 275px; margin: 0 50px; }
+.mpi_img         { width: 325px; margin: 0 50px; }
+.img_reg_img     { width: 325px; margin: 0 50px; }
+.kinematics_img  { width: 250px; margin: 0 50px; }
+.strain_device_img     { width: 350px; margin: 0 50px; }
+.cell_sig_img    { width: 300px; margin: 0 50px; }
+
+.proj_text {
+  flex: 1;
+  text-align: justify;
+  margin-right: 50px;
+  font-family: "Verdana", "Trebuchet MS", "Helvetica", "sans-serif";
+  font-size: 13px;
+}
+
+.proj_titles {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.proj_img { border: 1px solid rgb(220, 220, 220); }
+
+.pub_links { text-align: center; margin: auto; }
+
+/* Project link styles (unchanged) */
+.abstract_link { text-decoration: none; color: rgba(0, 0, 153, 1); }
+.abstract_link:hover { color: purple; }
+.abstract_link:active { color: red; } /* fixed: :activate → :active */
+
+/* Optional highlight on strain_device image interactions */
+.strain_device_img:active { border: 1px solid red; opacity: 0.75; }
+.strain_device_img:hover  { opacity: 0.85; }
+
+/* Non-link item style for works/products without href */
+.absent_link {
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  cursor: default;
+  padding: 0 2px;
+}
+
+/* Clearfix class (renderer appends it) */
+.clearfix { clear: both; }
+
+/* === Footer (unchanged except rgba fix) === */
+footer {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.8); /* fixed: percent → decimal */
+}
+
+.foot_text {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(150, 150, 150);
+  font-family: 'Roboto', 'courier new', 'courier', 'Arial', 'Times';
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+
+.foot_text:hover { color: rgb(100, 100, 100); }
+
+/* === Selection colors (kept as original) === */
+.name::selection,
+p::selection,
+.ital_par::selection,
+.bold_par::selection,
+.list_email::selection,
+.email_text::selection,
+.pub_links::selection {
+  background: #262626;
+  color: #2eff45;
+}
+
+.inline_link::selection,
+.abstract_link::selection {
+  background: #262626;
+  color: cyan;
+}
+
+.absent_link::selection {
+  background: #262626;
+  color: #2eff45;
+}
+
+/* keep images from overflowing small screens if any slip through */
+img { max-width: 100%; height: auto; }
