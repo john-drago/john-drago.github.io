@@ -78,7 +78,7 @@ const PROJECTS = [ // top-to-bottom order on the page
     imgClass: 'mpptx_coil_img',
     titleHTML: 'Universal Coil Design for Multiphoton Parallel Transmission',
     descHTML:
-      'Rather than deploying a multichannel shim array for MP-pTx, we designed a single, low frequency, “universal” transmit coil capable of mitigating flip angle inhomogeneities across a population database. Coil optimization was performed with boundary element methods to determine optimal winding patterns, in conjunction with joint optimization of a universal excitation pulse. This integrated design provides a simplified and scalable approach to parallel transmission.',
+      'Rather than deploying a multichannel shim array for MP-pTx, we designed a single, low frequency, “universal” transmit coil capable of mitigating flip angle inhomogeneities across a population database. Coil optimization was performed with boundary element methods to determine optimal winding patterns, in conjunction with joint optimization of a universal excitation pulse. This integrated design provides a simplified and scalable approach to multiphoton parallel transmission.',
     works: [
       { href: 'https://archive.ismrm.org/2024/0671.html', label: '[ Abstract ]', cls: 'abstract_link' },
       { label: '[ Manuscript in progress ]' }
